@@ -82,8 +82,6 @@ SmartCheff-IA es un sistema de IA que ayude a los usuarios a crear recetas perso
 - **PIL** Para la edición de la imágen de la receta
 - **requests** Para hacer la petición HTTP de la imágen de la receta generada
 - **BytesIO**  Para manejar las imágenes como datos binarios en memoria.
-- 
-
 
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
 
@@ -103,7 +101,6 @@ Antes de comenzar la instalación, es necesario:
 - API Key de API openAI
 
 ### Instalación 
-(en caso de que se opte por bajar el proyecto a una ubicación local)
 
 1. ##### Clonar el proyecto del repositorio
 
@@ -119,20 +116,27 @@ git init
 git clone https://github.com/hmfarias/SmartCheff-IA.git
 ```
 
+- Ejecuta Visual Studio Code
+
 - Crea un entorno virtual:
 ```
-  python -m venv env
-  source env/bin/activate  # En Windows usa `env\Scripts\activate`
+  Paleta de comandos: "Crear Entorno o Create Environment"
+  Selecciona Venv
 ```
 
 - Instala las dependencias:
 ```
-pip install openai==0.28 (mejorar el request)
-pip install jupyter notebook (instalar tanto jupyter como notebook, para poder crear nuestro servidor local)
-pip install "..." seguido de la dependencia necesaria para nuestro proyecto o modelo.
+pip install streamlit
+pip install openai
+pip install python-dotenv
+pip install fpdf
+pip install pillow
+pip install requests
 
-Una vez instaladas las dependencias, debemos ejecutar nuestro entorno jupyter notebook con el comando jupyter notebook
 ```
+- Agrega la API-KEY de OpneAI, en el archivo .env
+
+- Ejecuta con el comando streamlite run app.py
 
     
 <!-- CONTRIBUTING -->
