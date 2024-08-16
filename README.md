@@ -58,6 +58,9 @@
 ## Introduccion
 
 SmartCheff-IA, es un sistema de inteligencia artificial innovador que permite crear recetas de cocina personalizadas a partir de una lista de ingredientes. Solo necesitas ingresar los ingredientes disponibles, y la IA se encargará de sugerir platos creativos que puedes preparar. Además, genera una imagen del plato final, brindándote una visualización clara de lo que puedes esperar al seguir la receta. Ideal para quienes buscan inspiración en la cocina o quieren aprovechar al máximo los ingredientes que tienen a mano
+
+<img src="https://github.com/hmfarias/SmartCheff-IA/blob/main/LOGO.png" alt="Logo" width="270" height="270">
+    
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
 
 ### Construido con
