@@ -79,7 +79,7 @@ SmartCheff-IA es un sistema de IA que ayude a los usuarios a crear recetas perso
 - **Streamlit:** Para el front-end
 - **dotenv** Para controlar todos los pares de key-values de un archivo que sea etiquetado como archivo de entorno o . env y configurarlos como variables del entorno. (En este caso la API-KEY OpenAI)
 - **fpdf** Para generar el archivo PDF con la receta
-- **PIL** Para la edición de la imágen de la receta
+- **PILLOW** Para la edición de la imágen de la receta
 - **requests** Para hacer la petición HTTP de la imágen de la receta generada
 - **BytesIO**  Para manejar las imágenes como datos binarios en memoria.
 
@@ -137,7 +137,8 @@ pip install requests
 - Agrega la API-KEY de OpneAI, en el archivo .env
 
 - Ejecuta con el comando streamlite run app.py
-
+  
+<p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
     
 <!-- CONTRIBUTING -->
 
