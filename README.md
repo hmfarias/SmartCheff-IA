@@ -76,6 +76,9 @@ SmartCheff-IA, es un sistema de inteligencia artificial innovador que permite cr
 SmartCheff-IA es un sistema de IA que ayude a los usuarios a crear recetas personalizadas a partir de los ingredientes que tienen en su cocina. Este problema es relevante porque muchas personas se sienten abrumadas por la falta de ideas para cocinar y terminan comprando ingredientes adicionales, lo que puede generar desperdicio de alimentos.
 
 
+<img src="https://github.com/hmfarias/SmartCheff-IA/blob/main/imgReceta.png" alt="Logo" width="900" height="auto">
+
+
 #### Uso de Librerías
 
 - **openAI:** Para interactuar con las API de GPT-3 y DALL-E.
