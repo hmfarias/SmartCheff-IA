@@ -136,7 +136,7 @@ pip install requests
 ```
 - Agrega la API-KEY de OpneAI, en el archivo .env
 
-- Ejecuta con el comando streamlite run app.py
+- Ejecuta con el comando "streamlite run app.py"
   
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
     
