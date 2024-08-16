@@ -7,12 +7,12 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/hmfarias/SmartCheff-IA">
-    <img src="https://github.com/hmfarias/SmartCheff-IA/blob/main/logo.png" alt="Logo" width="270" height="270">
+    <img src="https://github.com/hmfarias/SmartCheff-IA/blob/main/LOGO.png" alt="Logo" width="270" height="270">
   </a>
   <h2 align="center">PROYECTO SmartCheff-IA</h2>
 
   <p align="center">
-    Generador de Itinerarios y Visualizaciones de Viaje Potenciado por IA
+    Generador de Recetas de Cocina Potenciado por IA
     <br />
     <a href="https://github.com/hmfarias/SmartCheff-IA"><strong>Explora los documentos »</strong></a>
     <br />
@@ -38,7 +38,6 @@
       <ul>
         <li><a href="#construido-con">Construido con</a></li>
         <li><a href="#descripción-general">Desripción General</a></li>
-          <ul><a href="#entregable">Entregable</a></ul>
           <ul><a href="#uso-de-librerías">Uso de Librerías</a></ul>
       </ul>
     </li>
@@ -58,7 +57,7 @@
 
 ## Introduccion
 
-El proyecto SmartCheff-IA, consiste en un sistema de Inteligencia Artificial diseñado para asistir en la planificación de viajes alrededor del mundo. Utilizando técnicas avanzadas de generación de prompts, SmartCheff-IA crea itinerarios de viaje detallados y personalizados para diversos destinos y actividades, proporcionando recomendaciones útiles y visuales.
+SmartCheff-IA, es un sistema de inteligencia artificial innovador que permite crear recetas de cocina personalizadas a partir de una lista de ingredientes. Solo necesitas ingresar los ingredientes disponibles, y la IA se encargará de sugerir platos creativos que puedes preparar. Además, genera una imagen del plato final, brindándote una visualización clara de lo que puedes esperar al seguir la receta. Ideal para quienes buscan inspiración en la cocina o quieren aprovechar al máximo los ingredientes que tienen a mano
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
 
 ### Construido con
@@ -71,24 +70,19 @@ El proyecto SmartCheff-IA, consiste en un sistema de Inteligencia Artificial dis
 
 ### Descripción general
 
-SmartCheff-IA resuelve la problemática de la planificación de viajes al proporcionar itinerarios detallados basados en los destinos y actividades especificados por el usuario. Utiliza modelos de IA para generar tanto texto descriptivo como imágenes que ayudan a visualizar los planes de viaje.
+SmartCheff-IA es un sistema de IA que ayude a los usuarios a crear recetas personalizadas a partir de los ingredientes que tienen en su cocina. Este problema es relevante porque muchas personas se sienten abrumadas por la falta de ideas para cocinar y terminan comprando ingredientes adicionales, lo que puede generar desperdicio de alimentos.
 
-#### Entregable
-
-El proyecto entrega una aplicación web interactiva donde los usuarios pueden ingresar sus destinos y actividades, y recibir itinerarios de viaje personalizados con imágenes representativas.
-
-Los entregables son:
-
-- Páginas HTML
-- Código fuente en archivos Python.
-- [Readme.md](https://https://github.com/hmfarias/SmartCheff-IA/edit/main/readme.md) con instrucciones de uso.
-
-
-<p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
 
 #### Uso de Librerías
 
 - **openAI:** Para interactuar con las API de GPT-3 y DALL-E.
+- **Streamlit:** Para el front-end
+- **dotenv** Para controlar todos los pares de key-values de un archivo que sea etiquetado como archivo de entorno o . env y configurarlos como variables del entorno. (En este caso la API-KEY OpenAI)
+- **fpdf** Para generar el archivo PDF con la receta
+- **PIL** Para la edición de la imágen de la receta
+- **requests** Para hacer la petición HTTP de la imágen de la receta generada
+- **BytesIO**  Para manejar las imágenes como datos binarios en memoria.
+- 
 
 
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
