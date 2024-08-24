@@ -177,7 +177,6 @@ Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más infor
 
 Marcelo Farias - [+54 9 3512601888] - hmfarias7@gmail.com
 
-Link del Proyecto: [https://https://github.com/hmfarias/SmartCheff-IA](https://https://github.com/hmfarias/SmartCheff-IA)
 
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
 
