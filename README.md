@@ -128,11 +128,11 @@ git init
 git clone https://github.com/hmfarias/SmartCheff-IA.git
 ```
 
-- Ejecuta Visual Studio Code
+- Desde la carpeta clonada con el nombre SmartCheff-IA, ejecuta Visual Studio Code
 
-- Crea un entorno virtual:
+- Crea un entorno virtual: (CTRL + SHIFT + P]
 ```
-  Paleta de comandos: "Crear Entorno o Create Environment"
+  Paleta de comandos: "Python: Crear Entorno o Python:Create Environment"
   Selecciona Venv
 ```
 
@@ -146,9 +146,9 @@ pip install pillow
 pip install requests
 
 ```
-- Agrega la API-KEY de OpneAI, en el archivo .env
+- Agrega la API-KEY de OpneAI, en el archivo .env (**NO encierres la API Key entre comillas**)
 
-- Ejecuta con el comando "streamlite run app.py"
+- Desde la terminal ejecuta con el comando "streamlit run app.py"
   
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
 
