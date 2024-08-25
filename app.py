@@ -5,6 +5,7 @@ from fpdf import FPDF #para trabajar con pdfs
 from PIL import Image #para poder importar imágenes
 import requests
 from io import BytesIO #para manejar operaciones de input y ouput de archivos
+import os #para trabajar con paths y archivos 
 
 
 #CARGO VARIABLES DE ENTORNO (API key de OpenAI en este caso)
@@ -12,6 +13,9 @@ load_dotenv(find_dotenv(), override=True)
 
 #CREO UN CLIENTE OPENAI
 cliente = OpenAI()
+
+#VOCES PARA SELECCIONAR AL PASAR LA RECETA A AUDIO
+voces = ["alloy", "echo", "fiable", "onyx", "nova", "shimmer"]
 
 #CREO LA FUNCION PARA GENERAR LA RECETA
 def generar_receta(ingredientes):
@@ -24,7 +28,7 @@ def generar_receta(ingredientes):
         Formatea la receta de la siguiente manera:
         
         Título de la Receta:
-        [Aquí coloca el titulo de la receta sin asteriscos ni caracteres especiales]
+        [En este renglón coloca el titulo de la receta sin asteriscos ni caracteres especiales]
 
         Ingredientes de la Receta con tamaño y porción:
 
@@ -65,6 +69,25 @@ def generar_imagen(titulo_receta):
     )
 
     return respuesta.data[0].url
+
+#CREO LA FUNCION PARA GENERAR EL AUDIO DE LA RECETA
+def generar_audio(receta, titulo_receta, voz):
+    respuesta = cliente.audio.speech.create(
+        model = 'tts-1',
+        voice = voz,
+        input = receta,
+    )
+    audio_path = f"{titulo_receta.replace(' ', '-')}.mp3"
+
+    #GUARDO EL ARCHIVO DE AUDIO
+    with open(audio_path, "wb") as output_file:
+        for chunk in respuesta.iter_bytes():
+            if chunk:
+                output_file.write(chunk)
+
+    # Devuelvo el path del archivo de audio generado            
+    return audio_path
+
 
 #CREO LA FUNCION PARA PODER GUARDAR LA RECETA EN UN PDF
 def save_to_pdf(titulo_receta, receta, imagen_url):
@@ -130,6 +153,16 @@ if 'receta' in st.session_state:
     st.write(f"{st.session_state.titulo_receta}")
     st.write(st.session_state.receta)
     st.image(st.session_state.imagen_receta, caption=st.session_state.titulo_receta)
+
+    voz= st.selectbox("Selecciona la voz que prefieres para escuchar tu receta:", voces)
+
+    # CREO EL BOTON PARA GENERAR EL AUDIO
+    if st.button("Generar Audio"):
+        audio_path = generar_audio(st.session_state.receta, st.session_state.titulo_receta, voz)
+        audio_archivo= open(audio_path, 'rb')
+        audio_bytes = audio_archivo.read()
+        st.audio(audio_bytes, format='audio/mp3')
+
 
     #CREO EL BOTON PARA GENERAR EL PDF CON LA RECETA
     if st.button("Generar PDF"):
