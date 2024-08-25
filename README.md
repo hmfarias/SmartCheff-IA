@@ -46,6 +46,7 @@
       <ul>
         <li><a href="#prerequisitos">Prerequisitos</a></li>
         <li><a href="#instalación">Instalación</a></li>
+        <li><a href="#video">Video iustrativo</a></li>
       </ul>
     </li>
     <li><a href="#contribuyendo">Contribuyendo</a></li>
@@ -57,7 +58,9 @@
 
 ## Introduccion
 
-SmartCheff-IA, es un sistema de inteligencia artificial innovador que permite crear recetas de cocina personalizadas a partir de una lista de ingredientes. Solo necesitas ingresar los ingredientes disponibles, y la IA se encargará de sugerir platos creativos que puedes preparar. Además, genera una imagen del plato final, brindándote una visualización clara de lo que puedes esperar al seguir la receta. Ideal para quienes buscan inspiración en la cocina o quieren aprovechar al máximo los ingredientes que tienen a mano
+La app SrtarCheff-IA se ha construido como parte complementaria del archivo Jupyter Notebook presentado como trabajo final de la materia "IA - GENERACION DE PROMPTS".
+
+SmartCheff-IA, es un sistema de inteligencia artificial innovador que permite crear recetas de cocina personalizadas a partir de una lista de ingredientes. Solo necesitas ingresar los ingredientes disponibles, y la IA se encargará de sugerir platos creativos que puedes preparar. Además, genera una imagen del plato final, brindándote una visualización clara de lo que puedes esperar al seguir la receta y la posibilidad de generar el audio de la misma para seguir las intruccioens de manera auditiva. Ideal para quienes buscan inspiración en la cocina o quieren aprovechar al máximo los ingredientes que tienen a mano
 
 <img src="https://github.com/hmfarias/SmartCheff-IA/blob/main/imageWeb.png" alt="Logo" width="700" height="auto">
     
@@ -87,7 +90,8 @@ SmartCheff-IA es un sistema de IA que ayude a los usuarios a crear recetas perso
 - **fpdf** Para generar el archivo PDF con la receta
 - **PILLOW** Para la edición de la imágen de la receta
 - **requests** Para hacer la petición HTTP de la imágen de la receta generada
-- **BytesIO**  Para manejar las imágenes como datos binarios en memoria.
+- **BytesIO**  Para manejar las imágenes como datos binarios en memoria.+
+- **os**  Para manejar paths y escrituras de archivos en disco.
 
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
 
@@ -145,6 +149,9 @@ pip install requests
 - Ejecuta con el comando "streamlite run app.py"
   
 <p align="right">(<a href="#tabla-de-contenidos">volver</a>)</p>
+
+### Video 
+
     
 <!-- CONTRIBUTING -->
 
