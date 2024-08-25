@@ -155,7 +155,7 @@ pip install requests
 ### Video
 
 A continuación podrá acceder al siguiente link para ver un video ilustrativo de la aplicación.
-(https://github.com/hmfarias/SmartCheff-IA/blob/main/videoAPP.mp4)
+(https://github.com/hmfarias/SmartCheff-IA/blob/main/videoApp.mp4)
 
     
 <!-- CONTRIBUTING -->
